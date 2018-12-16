@@ -1,0 +1,153 @@
+html, body {
+	font-family: arial, helvetica,sans-serif;	/*famille de polices utilisée*/
+	font-size:12px;								/*taille du texte de manière générale*/
+	margin: 0; padding: 0;						
+}
+body.sommaire{
+		/* display : table; */
+		/* width: 100%; */
+		/* background-color:none;*/				/*couleur du fond */
+		/*background-repeat:no-repeat;*/		/*pas de répétition de l'image de fond*/
+		background:url(images/sommaire/fond.png);		/*lien de l'image*/
+		background-attachment:fixed;			/*fond de page fixe même après redimentionnement de la fenêtre*/
+		background-position:center 0;			/*position x y de l'image */
+		background-size: cover;					/*taille de l'image (ici couvre toute la surface de l'écran même si modifié*/
+	}
+#fixe-head {
+	background-color: rgba(21, 49, 101, 0.7);	/*couleur de fond du header avec transparence*/
+	position: fixed;							/*position fixe du header*/
+	width: 100%;								/*largeur étendue à la taille de la fenêtre*/
+}
+#content {
+    width: 90%;									/*définition de la largeur maximale à 9*% du maximal*/
+    padding-top: 150px;							/*définition de la position de départ à 150pixels du haut de la fenêtre*/
+	text-align:center;							/*définition du centrage du texte*/
+    margin: auto;								/*marge définie automatiquement en fonction des parametres saisis dans html,body{}*/
+    font: normal 12px verdana, sans-serif;		/*definition spécifique de la forme du texte*/
+}
+#fixe-foot {
+	position: fixed;							/*position fixe du footer*/
+	bottom: 0;									/*définition de la position au minimal de la page*/
+	width: 100%;								/*comme pour les autre, définit la taille maximale de la largeur que prend le botom sur la fenêtre totale*/
+}
+
+p.sommaire{
+	background-color: rgba(0, 0, 255, 0.5);
+	font: bolder;
+	font-style:italic;
+	color: white;
+	font-size:25px;
+	text-align:center;
+	border-width:3px;
+	border-style:dotted;
+	border-color:red;
+}
+ol.sommaire{
+	background-color: rgba(0, 0, 255, 0.5);
+	font: bolder;
+	font-style:italic;
+	color: white;
+	font-size:25px;
+	text-align:left;
+	border-width:3px;
+	border-style:solid;
+	border-color:red;
+
+}
+/*definit les propriétés de tous les liens :*/
+	/*link pour le lien non encore visité*/
+		a:link{
+			color: Black;
+			background-color: transparent;			/*arrière plan du lien transparent (paramêtre par défault)*/
+			text-decoration: none;					/*spécifie la décoration du texte: ici aucune*/
+		}
+	/*hover pour un lien survolé :*/
+		a:hover{
+			color:blue;								/*couleur quand survolé par la souris*/
+			background-color: none;
+			text-decoration: underline;				/*texte souligné*/
+		}
+	/*visited pour un lien visité :*/
+		a:visited{
+			color:blue;								/*couleur quand survolé par la souris*/
+			background-color: none;
+			text-decoration: none;					/*texte souligné*/
+		}
+
+.left{
+	text-align:left;
+}
+.center{
+	text-align:center;
+}
+.right{
+	text-align:right;
+}
+.arrondi{
+	border-radius:100px;
+}
+.item-justified {
+	
+	display: flex;
+	justify-content:space-around;
+}
+.tresgras{
+	font-weight:bolder;
+}
+div.bottom{
+	padding-bottom:150px;
+}
+
+img.redim20{
+	height:20%;
+	width:20%; 
+}
+img.redim75{
+	height:75%;
+	width:75%; 
+}
+img.redim100{
+	height:100%;
+	width:100%; 
+}
+figure.legende{
+	font: bolder;
+	color: white;
+	font-size:25px;
+}
+a.text{
+	font-size:25px;
+	padding-bottom:10px;
+	line-height:100px;
+}
+h1{
+	font: bold italic 50px times new roman, serif;
+	text-shadow: 2px 2px blue;
+	font-size: 300%;
+	color: red; 
+	text-align: center;
+	}
+h2{
+	font-style:italic;
+	font-size: 400%; 
+	color: dark; 
+	text-align: center;
+	text-decoration:underline;
+	}
+h3{
+	font-style:italic;
+	font-size: 300%; 
+	color:red; 
+	margin-left: 15%;
+	text-decoration:underline;
+	}
+h4{
+	font-size: 200%; 
+	color: green; 
+	padding-left: 15px;
+}
+h5{
+	font-size: 150%; 
+	color: navy; 
+	padding-left: 25px;
+}
