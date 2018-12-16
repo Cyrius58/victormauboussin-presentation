@@ -3,33 +3,33 @@
 <html lang="fr">
 
 	<head>
-		<title>TP 2 Web - Sommaire</title>
-		<meta charset="utf-8">
+		<title>TP 2 Web - Sommaire</title>	<!-- s'affichera dans le nom de l'onglet -->
+		<meta charset="utf-8">				<!-- définit l'encodage des caractères-->
 		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	</head>
 	
-	<body class="sommaire">
-		<div id="haut">
-			<span id="fixe-head">
-				<h1>Site de présentation.</h1>
-			</span>
-		</div>
+	<body class="sommaire">						<!-- je fais appel ici à la class .sommaire de ma feuille de style, je souhaite en effet différencier plusieurs class attachées a chaque body de chaque page-->
+		<div id="haut">							<!-- référence ici un retour en haut de page-->
+			<span id="fixe-head">				<!-- l'outil span me sert à introduire un id défini dans la feuille de style, disant que ce qui est contenu dans span est un header fixe (même si la navigation dans la page avance, le header reste-->
+				<h1>Site de présentation.</h1>	<!-- titre de niveau 1-->
+			</span>								<!-- balise fermante span-->
+		</div>									<!-- idem mais pour div-->
 		
-		<div id="content" class="center" data-content-field="description">
-			<img src="images/sommaire/Victor_Mauboussin.jpg"class="arrondi redim20" align="center">
-			<p style="font-size:50px;"class="sommaire">
-				Mon nom est Victor Mauboussin.</br>
+		<div id="content" class="center" data-content-field="description">									<!-- ici je fais référence à #content de ma feuille de style. ce qui suit est du contenu de page, non header ni footer-->	
+			<img src="images/sommaire/Victor_Mauboussin.jpg" class="arrondi100 redim20" align="center">		<!-- j'affiche ici ma propre photo-->
+			<p style="font-size:50px;" class="sommaire">													<!-- ici j'utilise exceptionnelement un style puisque je ne suis pas amené à le réutiliser dans ma page-->
+				Mon nom est Victor Mauboussin.<br>
 				Je suis étudiant en informatique à Nevers.
 			</p>
-			<p class="sommaire">
-				Je suis pationné par ce que je fais en cours, en travail personnel ou en groupe ou même lors de la représentation de l'école dans divers forums ou même par l'idée que je travaillerai un jour dans un secteur qui me plait, aliant au moins deux de mes passions : le&nbsp;<strong>numérique</strong>&nbsp;et&nbsp;l'<strong>aéronautique !</strong>
+			<p class="sommaire">		<!-- appel de la class sommaire .sommaire ET p.sommaire-->
+				Je suis pationné par ce que je fais en cours, en travail personnel ou en groupe ou même lors de la représentation de l'école dans divers forums ou même par l'idée que je travaillerai un jour dans un secteur qui me plait, aliant au moins deux de mes passions : le&nbsp;<strong>numérique</strong>&nbsp;et&nbsp;l'<strong>aéronautique !</strong> <!-- ici &nbsp; est un espace insécable, la phrase se sera donc pas coupée de plus la balise <stong> met en avant et en gras les termes numérique et aéronautique -->
 			</p>
 			<p class="sommaire">
 				Ce site est un projet pationnant initié par notre responsable de formation et intervenant Web Mr ROBBE.
 			</p>
-			<ol class="sommaire">Les consignes sont précises :</br>
+			<ol class="sommaire">Les consignes sont précises :<br>	<!-- ouverture d'une liste et appel de la class sommaire ET ol.sommaire-->
 			Mission : Développez un site web sur un sujet de votre choix.
-				<li>Pas de base de données;</li>
+				<li>Pas de base de données;</li>					<!-- début de puce de numérotation en chifre Arabe-->
 				<li>Pas de langage de script server-side;</li>
 				<li>Site compact, structuré en dossiers spécifiques par type de contenus, en un maximum de six  pages web distinctes, hors pages imposées (mentions légales, sources);</li>
 				<li>Respect des contraintes légales sur le droit à l’image et la propriété intellectuelle;</li>
@@ -37,72 +37,59 @@
 				<li>Réalisation en HTML5 (XHTML1.0 strict toléré) et mise en forme par feuilles CSS3;</li>
 				<li>Mise en page libre, mais sans balise de tableau ou de cadre (balises frame, frameset proscrites);</li>
 				<li>...</li>
-			</ol>
+			</ol>													<!-- fermeture de ma liste-->
 			<p class="sommaire">
 				Avant de continuer dans la présentation de mon parcours et de mes différentes activités, je vous invite à vous laisser planner avec les quelques images qui suivent... on se retrouve à l'attérissage... Bon vol !
 			</p>
-			<p class="sommaire arrondi"align="center">
+			<p class="sommaire arrondi100">		<!-- ici j'ai voulu que le cadre entourant mon texte soit arrondi contrairement à précédement, le texte me le permet ici donc je ne me prive pas : appel double des class .sommaire, p.sommaire et arrondi100-->
 				Commençons par quelques avions civils :
 			</p>
-			<p>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/boeing_757-300.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-757-300-plan-avions"><figcaption>Boeing 757-300 Condor (EU)</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/AIB_A320neo.jpg" alt="https://fr.m.wikipedia.org/wiki/Fichier:AIB_A320neo_F-WNEW_27may15_LFBO-1.jpg"><figcaption>AIB A320neo F-WNEW (FR)</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/boeing-777-200.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-777-200er-a-seattle-tacom"><figcaption>Boeing 777-200ER (USA) Long-courrier</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/boeing_737.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-737-civil-avion"><figcaption>Boeing 737 (USA) Court/Moyen-courrier</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/concorde.jpg" alt="https://pixabay.com/fr/d%C3%A9pliant-concorde-supersonique-2356901/"><figcaption>Concorde (FR/UK) premier avion civil à atteindre mach 2 (2 fois la vitesse du son soit 2469,6km/h)</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/A380.jpg" alt="https://fr.wikipedia.org/wiki/Fichier:Airbus_A380-861,_Airbus_Industrie_AN2032144.jpg"><figcaption>A 380 (EU)</figcaption></figure>
-			<img src="images/sommaire/avion1.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion2.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion3.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion4.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion5.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion6.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion7.jpg"class="arrondi redim100" align="center">
-			<img src="images/sommaire/avion8.jpg"class="arrondi redim100" align="center">
-			<a class="text center tresgras" href="https://pxhere.com/fr/photo/634764"target="_blank">Lien de téléchargement libre</a>
-			</p>
-			<p class="sommaire arrondi"align="center">
+			<!-- j'utilise ici des balises figure (contenant) et figcaption (contenu), ces balises ont la propriété de s'attacher à la taille d'un élément (ici une image) donc le souci de positionnement ne s'applique pas. il est même possible de positionner la légende
+			sur un bord spécifique, sachant que celui par défaut est le bord du bas (cet outil est utilisé en tant que légende mais on peut très bien l'utiliser comme titre attaché)-->
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/boeing_757-300.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-757-300-plan-avions"><figcaption>Boeing 757-300 Condor (EU)</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/AIB_A320neo.jpg" alt="https://fr.m.wikipedia.org/wiki/Fichier:AIB_A320neo_F-WNEW_27may15_LFBO-1.jpg"><figcaption>AIB A320neo F-WNEW (FR)</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/boeing-777-200.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-777-200er-a-seattle-tacom"><figcaption>Boeing 777-200ER (USA) Long-courrier</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/boeing_737.jpg" alt="https://pixnio.com/fr/transport-vehicules/avions-avions/boeing-737-civil-avion"><figcaption>Boeing 737 (USA) Court/Moyen-courrier</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/concorde.jpg" alt="https://pixabay.com/fr/d%C3%A9pliant-concorde-supersonique-2356901/"><figcaption>Concorde (FR/UK) premier avion civil à atteindre mach 2 (2 fois la vitesse du son soit 2469,6km/h)</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/A380.jpg" alt="https://fr.wikipedia.org/wiki/Fichier:Airbus_A380-861,_Airbus_Industrie_AN2032144.jpg"><figcaption>A 380 (EU)</figcaption></figure>
+			<!-- ici je souhaite simplement laisser au lecteur la possibilité de trouver le nom des avions par eux-même ou seulement les laisser avec une vue d'ensemble dégagée de commentaires-->
+			<img src="images/sommaire/avion1.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion2.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion3.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion4.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion5.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion6.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion7.jpg" class="arrondi100 redim100" align="center">
+			<img src="images/sommaire/avion8.jpg" class="arrondi100 redim100" align="center">
+			<!-- toutes les images sont libre de droit et d'utilisation, certaines sont disponible directement sur le lien suivant : -->
+			<a class="text center tresgras" href="https://pxhere.com/fr/photo/634764" target="_blank">Lien de téléchargement libre</a><!--target="_blank"  pour signifier l'ouverture du lien dans un nouvel onglet/nouvelle fenêtre selon les paramêtres navigateur client-->
+
+			<!-- rien de bien changé, même chose que précédement-->
+			<p class="sommaire arrondi100" align="center">
 			Continuons par quelques avions/hélicoptères de combat :
 			</p>
-			<p>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/Mi_24.jpg" alt="https://pxhere.com/fr/photo/616845"><figcaption>Le russe Mi-24 est un des premiers hélicoptères d’attaque spécialisés dans le monde, destiné à soutenir l’infanterie et détruire le matériel blindé de l’ennemi. Le Mi-24 peut également être utilisé comme hélicoptère de transport pour huit personnes maximum. Ce vétéran, dont la construction a commencé au début des années 70, reste toujours opérationnel et a de nombreuses versions.</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/U.S._Navy_FA-18.JPG" alt="https://www.homestead.afrc.af.mil/News/Article-Display/Article/701392/us-navy-fa-18-super-hornet-demonstration-team-to-perform-at-the-wings-over-home/"><figcaption>Destiné à un usage embarqué (porte avion) le F/A-18 de l'U.S. Navy est un avion de combat multirôle (chasseur-bombardier, reconnaissance, interception, frappe au sol). environ 1500 unités sont déployées à travers le monde dont la plupart au sein des forces Américaines.</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/Bell_boeing_v_22_osprey.jpg" alt="https://pxhere.com/fr/photo/616845"><figcaption>Le Bell Boeing V-22 Osprey est un avion de transport hybride doté de la faculté de décoller verticalement grace à ses rotors basculants à la manière des hélicoptères. C'est un avion destiné au transport de troupes/équipements militaire dans des zones ou un attérissage traditionnel serait impossible.</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/Tigre.jpg" alt="https://www.flickr.com/photos/117994717@N06/18225906255"><figcaption>Fabriqué par Eurocoptère, le Tigre est un hélicoptère spécialisé dans l'attaque HAP(appui protection), HAD(appui destruction) UHT(Anti-char Air-Sol) ou encore ARH(reconnaissance). Son fuselage étudié pour être le plus fin possible ainsi que son double moteur de plus de 1200 ch lui permetent une vitesse assentionnelle très rapide (842m/min) ainsi qu'une vitesse maximale en piquée de 370km/h. Extrèmement agile et efficace, cet hélicoptère est considéré comme l'un des plus performant, également en terme de distance puisqu'il peut couvrir 1300km. En outre, sa ligne extrêmement fine le place comme une cible difficile à atteindre. (voir image suivante)</figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/Tigre2.jpg" alt=""><figcaption></figcaption></figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/gazelle.jpg" alt="https://pixabay.com/fr/h%C3%A9licopt%C3%A8res-aviation-l%C3%A9g%C3%A8re-327056/"><figcaption></figcaption>La Gazelle. Production française, cet hélicoptère léger et polyvalent est principalement utilisé pour des missions de reconnaisance civiles ou militaires (caméra Viviane) mais est encore aujourd'hui très usité pour des missions de combat de soutien d'infenterie, puisqu'il est équipé de divers armements (canon 20mm, 2x2 missiles antichar HOT, 2x2 missiles AA Mistral à reconnaissance thermique ou encore 2x2 missiles AA SA-7 Grail d'origine Russe.</figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/rafale.jpg" alt="https://pixabay.com/fr/rafale-arm%C3%A9e-de-l-air-fran%C3%A7aise-vol-2472062/"><figcaption></figcaption>Avion de combat omnirôle far de la Marine nationale ainsi que de l'Armée de l'air Française, c'est la puissance à l'état brut qui est développée dans ce bijou de technologie qu'est le Rafale. Non le seul dans sa catégorie à atteindre une vitesse hypersonnique, il est cependant seul capable de prouesses incroyable comme le décolage d'un porte avion en quelques secondes et en moins de 400 mètres. De même, bien que sa vitesse d'approche soit encore élevée (220km/h) il est capable d'attérir sur des distances très courtes (450m) sans utiliser de parachute. Sa particularité veut qu'il soit possible de le ravitailler en plein vol grace à un avion-ravitailleur, lui permettant ainsi de prolonger ses missions de reconnaissances sans retourner à sa base. Les ailettes disposées de part-et-d'autre du cokpit lui permettent des manoeuvres et des changement de trajectoires efficaces, pouvant pallier à une éventuelle menace. Tous ses équipements font de cet avion une arme de guerre à la fois puissante, efficace, et le cas échéant facilement désengageable dans le cas d'un combat aérien défavorable.</figure>
-			<figure class="legende"><img class="arrondi redim100" src="images/sommaire/AWAX.jpg" alt="https://fr.m.wikipedia.org/wiki/Fichier:French_E-3F_Airborne_Warning_and_Control_System_aircraft_takes_off_from_Avord,_France.jpg"><figcaption>Pour finir cette petite présentation des apareils liés à la 3ème dimension, je souhaite terminer par l'AWAX. Cet avion de commandement aéroporté est un indispensable dans toute stratégie militaire. En effet il est a lui seul les yeux et la voix des pilotes engagés dans des conflits. L'altitude qu'il est capable d'atteindre lui confère furtivité et puissance d'action. Ses systèmes de détection peuvent repérer un avion jusqu'à 500km de distance. Spécialisé dans le renseignement en temps réel de mouvements militaires, c'est la précision des données collectées qui peuvent faire la différence sur un conflit. Cet avion est capable de contrôler à distance et avec une précision milimétrée des aérostats pouvant rester en activité plusieurs semaines sur site. L'un des fleuron de l'industrie aéronautique mondiale encore aujourd'hui considéré comme la plus efficace des ressource militaire stratégiques matérielle.</figcaption></figure>
-			</p>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/Mi_24.jpg" alt="https://pxhere.com/fr/photo/616845"><figcaption>Le russe Mi-24 est un des premiers hélicoptères d’attaque spécialisés dans le monde, destiné à soutenir l’infanterie et détruire le matériel blindé de l’ennemi. Le Mi-24 peut également être utilisé comme hélicoptère de transport pour huit personnes maximum. Ce vétéran, dont la construction a commencé au début des années 70, reste toujours opérationnel et a de nombreuses versions.</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/U.S._Navy_FA-18.JPG" alt="https://www.homestead.afrc.af.mil/News/Article-Display/Article/701392/us-navy-fa-18-super-hornet-demonstration-team-to-perform-at-the-wings-over-home/"><figcaption>Destiné à un usage embarqué (porte avion) le F/A-18 de l'U.S. Navy est un avion de combat multirôle (chasseur-bombardier, reconnaissance, interception, frappe au sol). environ 1500 unités sont déployées à travers le monde dont la plupart au sein des forces Américaines.</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/Bell_boeing_v_22_osprey.jpg" alt="https://pxhere.com/fr/photo/616845"><figcaption>Le Bell Boeing V-22 Osprey est un avion de transport hybride doté de la faculté de décoller verticalement grace à ses rotors basculants à la manière des hélicoptères. C'est un avion destiné au transport de troupes/équipements militaire dans des zones ou un attérissage traditionnel serait impossible.</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/Tigre.jpg" alt="https://www.flickr.com/photos/117994717@N06/18225906255"><figcaption>Fabriqué par Eurocoptère, le Tigre est un hélicoptère spécialisé dans l'attaque HAP(appui protection), HAD(appui destruction) UHT(Anti-char Air-Sol) ou encore ARH(reconnaissance). Son fuselage étudié pour être le plus fin possible ainsi que son double moteur de plus de 1200 ch lui permetent une vitesse assentionnelle très rapide (842m/min) ainsi qu'une vitesse maximale en piquée de 370km/h. Extrèmement agile et efficace, cet hélicoptère est considéré comme l'un des plus performant, également en terme de distance puisqu'il peut couvrir 1300km. En outre, sa ligne extrêmement fine le place comme une cible difficile à atteindre. (voir image suivante)</figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/Tigre2.jpg" alt=""><figcaption></figcaption></figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/gazelle.jpg" alt="https://pixabay.com/fr/h%C3%A9licopt%C3%A8res-aviation-l%C3%A9g%C3%A8re-327056/"><figcaption></figcaption>La Gazelle. Production française, cet hélicoptère léger et polyvalent est principalement utilisé pour des missions de reconnaisance civiles ou militaires (caméra Viviane) mais est encore aujourd'hui très usité pour des missions de combat de soutien d'infenterie, puisqu'il est équipé de divers armements (canon 20mm, 2x2 missiles antichar HOT, 2x2 missiles AA Mistral à reconnaissance thermique ou encore 2x2 missiles AA SA-7 Grail d'origine Russe.</figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/rafale.jpg" alt="https://pixabay.com/fr/rafale-arm%C3%A9e-de-l-air-fran%C3%A7aise-vol-2472062/"><figcaption></figcaption>Avion de combat omnirôle far de la Marine nationale ainsi que de l'Armée de l'air Française, c'est la puissance à l'état brut qui est développée dans ce bijou de technologie qu'est le Rafale. Non le seul dans sa catégorie à atteindre une vitesse hypersonnique, il est cependant seul capable de prouesses incroyable comme le décolage d'un porte avion en quelques secondes et en moins de 400 mètres. De même, bien que sa vitesse d'approche soit encore élevée (220km/h) il est capable d'attérir sur des distances très courtes (450m) sans utiliser de parachute. Sa particularité veut qu'il soit possible de le ravitailler en plein vol grace à un avion-ravitailleur, lui permettant ainsi de prolonger ses missions de reconnaissances sans retourner à sa base. Les ailettes disposées de part-et-d'autre du cokpit lui permettent des manoeuvres et des changement de trajectoires efficaces, pouvant pallier à une éventuelle menace. Tous ses équipements font de cet avion une arme de guerre à la fois puissante, efficace, et le cas échéant facilement désengageable dans le cas d'un combat aérien défavorable.</figure>
+			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/AWAX.jpg" alt="https://fr.m.wikipedia.org/wiki/Fichier:French_E-3F_Airborne_Warning_and_Control_System_aircraft_takes_off_from_Avord,_France.jpg"><figcaption>Pour finir cette petite présentation des apareils liés à la 3ème dimension, je souhaite terminer par l'AWAX. Cet avion de commandement aéroporté est un indispensable dans toute stratégie militaire. En effet il est a lui seul les yeux et la voix des pilotes engagés dans des conflits. L'altitude qu'il est capable d'atteindre lui confère furtivité et puissance d'action. Ses systèmes de détection peuvent repérer un avion jusqu'à 500km de distance. Spécialisé dans le renseignement en temps réel de mouvements militaires, c'est la précision des données collectées qui peuvent faire la différence sur un conflit. Cet avion est capable de contrôler à distance et avec une précision milimétrée des aérostats pouvant rester en activité plusieurs semaines sur site. L'un des fleuron de l'industrie aéronautique mondiale encore aujourd'hui considéré comme la plus efficace des ressource militaire stratégiques matérielle.</figcaption></figure>
 			<p class="sommaire">
 				Mon introduction étant désormais terminée, je vous invite à consulter les différentes pages suivantes afin d'en savoir un peu plus sur mon parcours ainsi que mes motivations. Bonne lecture !
-			</p>
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			</p>
+			</p>			
 		</div>
-		
-		
-		
-		
-		
+		<!-- ici ma balise div fait référence à un bas de page centré-->
 		<div class="bottom center">
-			<a class="center tresgras" href="#haut">Haut de page</a>
+			<a class="center tresgras" href="#haut">Haut de page</a><!-- le lien retourne a la balise <span id="fixe-head"> du début de code, servant ainsi de retour "Haut de page"-->
 		</div>
-		<span id="fixe-foot" class="center">
-			<p class="item-justified">
-				<a href="https://www.cs2i-bourgogne.com/" title="Lien vers l'école CS2I" target="_blank"> <!--target="_blank"  pour signifier l'ouverture du lien dans un nouvel onglet/nouvelle fenêtre selon les paramêtres navigateur client-->
-					<img src="images/CS2I.jpg"class="arrondi redim75"></a>
+		<span id="fixe-foot" class="center">	<!-- on retrouve ici une balise span faisant référence à #fixe-foot, définissant ce qui suit comme pied de page fixe-->
+			<p class="item-justified">			<!-- ici ma balise <p> prend la class item-justified pour dire de prendre en charge les flexboxes-->
+				<a href="https://www.cs2i-bourgogne.com/" title="Lien vers l'école CS2I" target="_blank">
+					<img src="images/CS2I.jpg" class="arrondi100 redim75"></a>
 				<a href="http://www.nievre.cci.fr/" title="Lien vers la Chambre de Commerce et d'Industrie de la Nièvre" target="_blank">
-					<img src="images/CCI.jpg"class="arrondi redim75"></a>
+					<img src="images/CCI.jpg" class="arrondi100 redim75"></a>
 			</p>
 		</span>
 	</body>
@@ -113,8 +100,10 @@
 &nbsp; 				-> espace non sécable
 &thinsp; 			-> espace sécable
 
-
-
+flexesboxes :
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+legendes attachées :
+	https://www.alsacreations.com/article/lire/1337-html5-elements-figure-et-figcaption.html
 
 
 

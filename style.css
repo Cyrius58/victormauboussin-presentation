@@ -3,15 +3,15 @@ html, body {
 	font-size:12px;								/*taille du texte de manière générale*/
 	margin: 0; padding: 0;						
 }
+
+/*propriétés applicable uniquement dans la page sommaire : */
 body.sommaire{
-		/* display : table; */
-		/* width: 100%; */
-		background-color:#0E1EB9;		/*couleur du fond */
-		/*background-repeat:no-repeat;*/		/*pas de répétition de l'image de fond*/
-		background:url(images/sommaire/fond.png);		/*lien de l'image*/
-		background-attachment:fixed;			/*fond de page fixe même après redimentionnement de la fenêtre*/
-		background-position:center 0;			/*position x y de l'image */
-		background-size: cover;					/*taille de l'image (ici couvre toute la surface de l'écran même si modifié*/
+		background-color:#0E1EB9;					/*couleur du fond */
+		background-repeat:no-repeat;				/*pas de répétition de l'image de fond*/
+		background:url(images/sommaire/fond.png);	/*lien de l'image*/
+		background-attachment:fixed;				/*fond de page fixe même après redimentionnement de la fenêtre*/
+		background-position:center 0;				/*position x y de l'image */
+		background-size: cover;						/*taille de l'image (ici couvre toute la surface de l'écran même si modifié*/
 	}
 #fixe-head {
 	background-color: rgba(21, 49, 101, 0.7);	/*couleur de fond du header avec transparence*/
@@ -19,41 +19,37 @@ body.sommaire{
 	width: 100%;								/*largeur étendue à la taille de la fenêtre*/
 }
 #content {
-    width: 90%;									/*définition de la largeur maximale à 9*% du maximal*/
-    padding-top: 150px;							/*définition de la position de départ à 150pixels du haut de la fenêtre*/
-	text-align:center;							/*définition du centrage du texte*/
-    margin: auto;								/*marge définie automatiquement en fonction des parametres saisis dans html,body{}*/
-    font: normal 12px verdana, sans-serif;		/*definition spécifique de la forme du texte*/
+    width: 90%;								/*définition de la largeur maximale à 9*% du maximal*/
+    padding-top: 150px;						/*définition de la position de départ à 150pixels du haut de la fenêtre*/
+	text-align:center;						/*définition du centrage du texte*/
+    margin: auto;							/*marge définie automatiquement en fonction des parametres saisis dans html,body{}*/
+    font: normal 12px verdana, sans-serif;	/*definition spécifique de la forme du texte*/
 }
 #fixe-foot {
-	position: fixed;							/*position fixe du footer*/
-	bottom: 0;									/*définition de la position au minimal de la page*/
-	width: 100%;								/*comme pour les autre, définit la taille maximale de la largeur que prend le botom sur la fenêtre totale*/
+	position: fixed;	/*position fixe du footer*/
+	bottom: 0;			/*définition de la position au minimal de la page*/
+	width: 100%;		/*comme pour les autre, définit la taille maximale de la largeur que prend le botom sur la fenêtre totale*/
 }
 
-p.sommaire{
-	background-color: rgba(0, 0, 255, 0.5);
+.sommaire{
+	background-color: rgba(0, 0, 255, 0.5);		/*".sommaire" viendra certainement à changer en fonction de l'utilisation sur les autres pages*/
 	font: bolder;
 	font-style:italic;
 	color: white;
 	font-size:25px;
+	border-width:3px;
+	border-color:red;
+}
+
+p.sommaire{					/*ne s'appliquera qu'a un paragraphe <p></p>*/
 	text-align:center;
-	border-width:3px;
-	border-style:dotted;
-	border-color:red;
+	border-style:dotted;	/*ici le cadre est en pointillés*/
 }
-ol.sommaire{
-	background-color: rgba(0, 0, 255, 0.5);
-	font: bolder;
-	font-style:italic;
-	color: white;
-	font-size:25px;
+ol.sommaire{				/*ne s'appliquera qu'a une liste <ol></ol>*/
 	text-align:left;
-	border-width:3px;
-	border-style:solid;
-	border-color:red;
-
+border-style:solid;			/*ici le cadre est complet*/
 }
+
 /*definit les propriétés de tous les liens :*/
 	/*link pour le lien non encore visité*/
 		a:link{
@@ -64,7 +60,7 @@ ol.sommaire{
 	/*hover pour un lien survolé :*/
 		a:hover{
 			color:blue;								/*couleur quand survolé par la souris*/
-			background-color: none;
+			background-color: gold;
 			text-decoration: underline;				/*texte souligné*/
 		}
 	/*visited pour un lien visité :*/
@@ -73,61 +69,35 @@ ol.sommaire{
 			background-color: none;
 			text-decoration: none;					/*texte souligné*/
 		}
+a.text{font-size:25px;padding-bottom:10px;line-height:100px;}
 
-.left{
-	text-align:left;
-}
-.center{
-	text-align:center;
-}
-.right{
-	text-align:right;
-}
-.arrondi{
-	border-radius:100px;
-}
+.left{text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
+
 .item-justified {
-	
-	display: flex;
-	justify-content:space-around;
+	display: flex;					/*active la gestion des flexbox*/
+	justify-content:space-around;	/*item disposés à égale distance entre eux et entre les bords*/
 }
-.tresgras{
-	font-weight:bolder;
-}
-div.bottom{
-	padding-bottom:150px;
-}
+.tresgras{font-weight:bolder;}
 
-img.redim20{
-	height:20%;
-	width:20%; 
-}
-img.redim75{
-	height:75%;
-	width:75%; 
-}
-img.redim100{
-	height:100%;
-	width:100%; 
-}
-figure.legende{
-	font: bolder;
-	color: white;
-	font-size:25px;
-}
-a.text{
-	font-size:25px;
-	padding-bottom:10px;
-	line-height:100px;
-}
+div.bottom{padding-bottom:200px;}	/*définit l'espace (non inscriptible) me permettant de profiter pleinement du pied de page sans avoir
+										à craindre qu'un lien ne puisse pas être accessible car situé sous le pied de page*/
+
+.arrondi100{border-radius:100px;} /*arrondi les angles des images ou tableaux a hauteur de 100px*/
+img.redim20{height:20%;width:20%; }
+img.redim75{height:75%;width:75%; }
+img.redim100{height:100%;width:100%; }
+figure.legende{font: bolder;color: white;font-size:25px;}
+
 h1{
 	font: bold italic 50px times new roman, serif;
 	text-shadow: 2px 2px blue;
-	font-size: 300%;
+	font-size: 150%;
 	color: red; 
 	text-align: center;
 	}
-h2{
+/*h2{
 	font-style:italic;
 	font-size: 400%; 
 	color: dark; 
@@ -151,3 +121,33 @@ h5{
 	color: navy; 
 	padding-left: 25px;
 }
+*/
+
+/*	OUTILS :
+
+background :
+http://css.mammouthland.net/image-de-fond-background-css.php
+https://openclassrooms.com/forum/sujet/background-image-etire
+http://css.mammouthland.net/css3/plusieurs-background-image-sans-div.php
+
+liste des commandes css :
+http://www.css-faciles.com/proprietes-css-familles.php
+
+gestion des liens :
+https://developer.mozilla.org/fr/docs/Web/CSS/:active
+https://developer.mozilla.org/fr/docs/Web/CSS/:hover
+https://www.commentcamarche.net/forum/affich-2794190-lien-html-sur-une-image
+
+gérer la transparence :
+https://www.alsacreations.com/tuto/lire/909-CSS-transparence-couleur-rgba.html
+
+tutos CSS :
+https://www.w3schools.com/css/default.asp
+
+bordures en css :
+http://css.mammouthland.net/border-css.php
+https://forum.alsacreations.com/topic-4-22844-1-resoluMasquer-bordure--border-none-border-hidden-border-0px-.html
+
+
+
+
