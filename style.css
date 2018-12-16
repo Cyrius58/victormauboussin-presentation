@@ -19,9 +19,8 @@ body.sommaire{
 	width: 100%;								/*largeur étendue à la taille de la fenêtre*/
 }
 #content {
-    width: 90%;								/*définition de la largeur maximale à 9*% du maximal*/
+    width: 90%;								/*définition de la largeur maximale à 90% du maximal, évitant que le texte ne soit trop proche du bord de fenêtre*/
     padding-top: 150px;						/*définition de la position de départ à 150pixels du haut de la fenêtre*/
-	text-align:center;						/*définition du centrage du texte*/
     margin: auto;							/*marge définie automatiquement en fonction des parametres saisis dans html,body{}*/
     font: normal 12px verdana, sans-serif;	/*definition spécifique de la forme du texte*/
 }
@@ -40,6 +39,16 @@ body.sommaire{
 	border-width:3px;
 	border-color:red;
 }
+.liens{
+	font: bolder;
+	font-style:normal;
+	color: white;
+	font-size:25px;
+	border-width:3px;
+	border-color:red;
+	text-align:center;
+	border-style:dotted;
+}
 
 p.sommaire{					/*ne s'appliquera qu'a un paragraphe <p></p>*/
 	text-align:center;
@@ -53,19 +62,19 @@ border-style:solid;			/*ici le cadre est complet*/
 /*definit les propriétés de tous les liens :*/
 	/*link pour le lien non encore visité*/
 		a:link{
-			color: Black;
+			color: gold;
 			background-color: transparent;			/*arrière plan du lien transparent (paramêtre par défault)*/
 			text-decoration: none;					/*spécifie la décoration du texte: ici aucune*/
 		}
 	/*hover pour un lien survolé :*/
 		a:hover{
 			color:blue;								/*couleur quand survolé par la souris*/
-			background-color: gold;
+			background-color: none;
 			text-decoration: underline;				/*texte souligné*/
 		}
 	/*visited pour un lien visité :*/
 		a:visited{
-			color:blue;								/*couleur quand survolé par la souris*/
+			color:gold;								/*couleur quand survolé par la souris*/
 			background-color: none;
 			text-decoration: none;					/*texte souligné*/
 		}
@@ -75,13 +84,13 @@ a.text{font-size:25px;padding-bottom:10px;line-height:100px;}
 .center{text-align:center;}
 .right{text-align:right;}
 
-.item-justified {
+.flexbox-justified {
 	display: flex;					/*active la gestion des flexbox*/
 	justify-content:space-around;	/*item disposés à égale distance entre eux et entre les bords*/
 }
 .tresgras{font-weight:bolder;}
 
-div.bottom{padding-bottom:200px;}	/*définit l'espace (non inscriptible) me permettant de profiter pleinement du pied de page sans avoir
+div.bottom{padding-bottom:150px;}	/*définit l'espace (non inscriptible) me permettant de profiter pleinement du pied de page sans avoir
 										à craindre qu'un lien ne puisse pas être accessible car situé sous le pied de page*/
 
 .arrondi100{border-radius:100px;} /*arrondi les angles des images ou tableaux a hauteur de 100px*/

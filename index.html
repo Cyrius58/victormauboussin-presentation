@@ -9,13 +9,23 @@
 	</head>
 	
 	<body class="sommaire">						<!-- je fais appel ici à la class .sommaire de ma feuille de style, je souhaite en effet différencier plusieurs class attachées a chaque body de chaque page-->
-		<div id="haut">							<!-- référence ici un retour en haut de page-->
-			<span id="fixe-head">				<!-- l'outil span me sert à introduire un id défini dans la feuille de style, disant que ce qui est contenu dans span est un header fixe (même si la navigation dans la page avance, le header reste-->
-				<h1>Site de présentation.</h1>	<!-- titre de niveau 1-->
-			</span>								<!-- balise fermante span-->
-		</div>									<!-- idem mais pour div-->
 		
-		<div id="content" class="center" data-content-field="description">									<!-- ici je fais référence à #content de ma feuille de style. ce qui suit est du contenu de page, non header ni footer-->	
+		<!-- #HEADER : -->
+
+		<span id="fixe-head">				<!-- l'outil span me sert à introduire un id défini dans la feuille de style, disant que ce qui est contenu dans span est un header fixe (même si la navigation dans la page avance, le header reste-->
+			<div id="haut">							<!-- référence ici un retour en haut de page-->
+				<h1>Site de présentation.</h1>	<!-- titre de niveau 1-->
+			</div>									<!-- idem mais pour div-->
+		</span>								<!-- balise fermante span-->
+		
+		<!-- FIN #HEADER : -->
+
+<!--______________________________________________________________________________________________________________________________________________________-->
+		
+		<!-- #CONTENT : -->
+		
+		<div id="content" class="center" data-content-field="description">			<!-- ici je fais référence à #content de ma feuille de style. ce qui suit est du contenu de page, non header ni footer-->	
+					
 			<img src="images/sommaire/Victor_Mauboussin.jpg" class="arrondi100 redim20" align="center">		<!-- j'affiche ici ma propre photo-->
 			<p style="font-size:50px;" class="sommaire">													<!-- ici j'utilise exceptionnelement un style puisque je ne suis pas amené à le réutiliser dans ma page-->
 				Mon nom est Victor Mauboussin.<br>
@@ -78,20 +88,36 @@
 			<figure class="legende"><img class="arrondi100 redim100" src="images/sommaire/AWAX.jpg" alt="https://fr.m.wikipedia.org/wiki/Fichier:French_E-3F_Airborne_Warning_and_Control_System_aircraft_takes_off_from_Avord,_France.jpg"><figcaption>Pour finir cette petite présentation des apareils liés à la 3ème dimension, je souhaite terminer par l'AWAX. Cet avion de commandement aéroporté est un indispensable dans toute stratégie militaire. En effet il est a lui seul les yeux et la voix des pilotes engagés dans des conflits. L'altitude qu'il est capable d'atteindre lui confère furtivité et puissance d'action. Ses systèmes de détection peuvent repérer un avion jusqu'à 500km de distance. Spécialisé dans le renseignement en temps réel de mouvements militaires, c'est la précision des données collectées qui peuvent faire la différence sur un conflit. Cet avion est capable de contrôler à distance et avec une précision milimétrée des aérostats pouvant rester en activité plusieurs semaines sur site. L'un des fleuron de l'industrie aéronautique mondiale encore aujourd'hui considéré comme la plus efficace des ressource militaire stratégiques matérielle.</figcaption></figure>
 			<p class="sommaire">
 				Mon introduction étant désormais terminée, je vous invite à consulter les différentes pages suivantes afin d'en savoir un peu plus sur mon parcours ainsi que mes motivations. Bonne lecture !
-			</p>			
-		</div>
-		<!-- ici ma balise div fait référence à un bas de page centré-->
-		<div class="bottom center">
+			</p>
 			<a class="center tresgras" href="#haut">Haut de page</a><!-- le lien retourne a la balise <span id="fixe-head"> du début de code, servant ainsi de retour "Haut de page"-->
+			<p class="liens flexbox-justified">
+			<a href="index.html" title="Lien vers page1">Sommaire</a>
+			<a href="page1.html" title="Lien vers page2">Page 1</a>
+			<a href="page2.html" title="Lien vers page2">Page 2</a>
+			<a href="page3.html" title="Lien vers page3">Page 3</a>
+			<a href="page4.html" title="Lien vers page3">Page 4</a>
+			<a href="contact.html" title="Lien vers page3">Contact</a>
+			<a href="sources.html" title="Lien vers page3">Sources</a>
+			<a href="mentions_legales.html" title="Lien vers page3">Mentions légales</a>
+			</p>
 		</div>
+		<div class="bottom"></div>
+		<!-- FIN #CONTENT : -->
+	
+<!--______________________________________________________________________________________________________________________________________________________-->
+		
+		<!-- #FOOTER : -->
+		
 		<span id="fixe-foot" class="center">	<!-- on retrouve ici une balise span faisant référence à #fixe-foot, définissant ce qui suit comme pied de page fixe-->
-			<p class="item-justified">			<!-- ici ma balise <p> prend la class item-justified pour dire de prendre en charge les flexboxes-->
+			<p class="flexbox-justified">			<!-- ici ma balise <p> prend la class flexbox-justified pour dire de prendre en charge les flexboxes-->
 				<a href="https://www.cs2i-bourgogne.com/" title="Lien vers l'école CS2I" target="_blank">
 					<img src="images/CS2I.jpg" class="arrondi100 redim75"></a>
 				<a href="http://www.nievre.cci.fr/" title="Lien vers la Chambre de Commerce et d'Industrie de la Nièvre" target="_blank">
 					<img src="images/CCI.jpg" class="arrondi100 redim75"></a>
 			</p>
 		</span>
+		<!-- FIN #FOOTER : -->
+
 	</body>
 </html>
 
