@@ -6,7 +6,7 @@ html, body {
 body.sommaire{
 		/* display : table; */
 		/* width: 100%; */
-		background-color:blue;		/*couleur du fond */
+		background-color:#0E1EB9;		/*couleur du fond */
 		/*background-repeat:no-repeat;*/		/*pas de répétition de l'image de fond*/
 		background:url(images/sommaire/fond.png);		/*lien de l'image*/
 		background-attachment:fixed;			/*fond de page fixe même après redimentionnement de la fenêtre*/
